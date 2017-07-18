@@ -1,0 +1,10 @@
+git pull origin master              -pull code from remote master to local master
+git pull origin master:mybranch     -pull code from remote master to local mybranch
+
+
+git checkout -b branchname          -create new branch with name newbranch
+git checkout -D branchname          -delete branch with name branchname
+
+git add -A                          -add all files to staging
+git reset                           -unstage all files from staging
+git -rm --cached filename           -unstage single file from staging
