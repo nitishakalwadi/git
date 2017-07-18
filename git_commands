@@ -1,6 +1,7 @@
 git pull origin master              -pull code from remote master to local master
 git pull origin master:mybranch     -pull code from remote master to local mybranch
 
+git branch                          -list all branches
 
 git checkout -b branchname          -create new branch with name newbranch
 git checkout -D branchname          -delete branch with name branchname
@@ -8,3 +9,26 @@ git checkout -D branchname          -delete branch with name branchname
 git add -A                          -add all files to staging
 git reset                           -unstage all files from staging
 git -rm --cached filename           -unstage single file from staging
+git commit -m "commit message"      -commit all staged files
+
+
+git stash list                      -list stash contents
+git stash show -p                   -show contents of stash
+git stash show                      -show contents of stash
+git stash pop                       -pop from stash and apply to current branch
+git stash pop stash@{n}             -apply nth stash and remove it from stash list
+git stash apply stash@{n}           -apply nth stash to current branch 
+git stash clear                     -clean stash
+git stash drop                      -drops top most stash
+git stash drop stash@{n}            -drops nth stash
+
+git cherry-pick hash                -apply commit from differnt branch to current branch
+
+git rev-list --count HEAD           -get commit count 
+
+git push -f origin HEAD             -force push local changes to remote overwriting its commit
+
+git tag tagname                     -create tag in local repo with name tagname
+git push origin --tags              -push local tags to remote
+git reset tagname                   -revert to tagname with changes in local
+git reset --hard tagname            -revert to the tagname with hard reset losing all changes
