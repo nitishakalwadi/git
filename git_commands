@@ -32,3 +32,8 @@ git tag tagname                     -create tag in local repo with name tagname
 git push origin --tags              -push local tags to remote
 git reset tagname                   -revert to tagname with changes in local
 git reset --hard tagname            -revert to the tagname with hard reset losing all changes
+
+git merge branchname                -merge branchname to current branch
+
+git checkout .                      -Removes Unstaged Tracked files ONLY
+git clean -f                        -Removes Unstaged UnTracked files ONLY
