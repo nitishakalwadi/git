@@ -37,3 +37,5 @@ git merge branchname                -merge branchname to current branch
 
 git checkout .                      -Removes Unstaged Tracked files ONLY
 git clean -f                        -Removes Unstaged UnTracked files ONLY
+
+git rebase -i HEAD~3                -squash last 3 commits if you want
