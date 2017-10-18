@@ -12,6 +12,7 @@ git -rm --cached filename           -unstage single file from staging
 git commit -m "commit message"      -commit all staged files
 
 
+git stash save "stash name"         -saves stash withe the name
 git stash list                      -list stash contents
 git stash show -p                   -show contents of stash
 git stash show                      -show contents of stash
